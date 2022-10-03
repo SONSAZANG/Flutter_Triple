@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sonsazang.triple.triple">
    <application
-        android:label="triple"
+        android:label="TRIPLE"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

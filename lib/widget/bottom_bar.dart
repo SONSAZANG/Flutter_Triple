@@ -8,26 +8,23 @@ class Bottom extends StatelessWidget {
       child: Container(
         height: 60,
         child: TabBar(
-          labelColor: Colors.red,
-          unselectedLabelColor: Colors.red,
-          indicatorColor: Colors.red,
+          indicatorColor: Colors.black,
+          labelColor: Colors.black,
+          unselectedLabelColor: Colors.grey,
           tabs: <Widget>[
             Tab(
-              icon: Image.asset(
-                'images/home.png',
-                scale: 1.2,
+              icon: ImageIcon(
+                AssetImage('images/home.png'),
               ),
             ),
             Tab(
-              icon: Image.asset(
-                'images/search.png',
-                scale: 1.2,
+              icon: ImageIcon(
+                AssetImage('images/search.png'),
               ),
             ),
             Tab(
-              icon: Image.asset(
-                'images/user.png',
-                scale: 1.2,
+              icon: ImageIcon(
+                AssetImage('images/user.png'),
               ),
             )
           ],

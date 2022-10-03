@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:triple/Screen/home_screen.dart';
 import 'package:triple/widget/bottom_bar.dart';
 
 void main() {
@@ -19,11 +20,8 @@ class _MyAppState extends State<MyApp> {
     initialization();
   }
 
+// 시작 후 3초 대기 함수 splash Screen
   void initialization() async {
-    // This is where you can initialize the resources needed by your app while
-    // the splash screen is displayed.  Remove the following example because
-    // delaying the user experience is a bad design practice!
-    // ignore_for_file: avoid_print
     print('ready in 3...');
     await Future.delayed(const Duration(seconds: 1));
     print('ready in 2...');
@@ -37,36 +35,34 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'TRIPLE',
-        theme: ThemeData(
-          brightness: Brightness.light,
-          primaryColor: Colors.white,
-        ),
-        home: DefaultTabController(
-          length: 3,
-          child: Scaffold(
-            body: TabBarView(
-              physics: NeverScrollableScrollPhysics(),
-              children: [
-                Container(
-                  child: Center(
-                    child: Text('Main'),
-                  ),
+      title: 'TRIPLE',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.light,
+        primaryColor: Colors.white,
+      ),
+      home: DefaultTabController(
+        length: 3,
+        child: Scaffold(
+          body: TabBarView(
+            physics: NeverScrollableScrollPhysics(),
+            children: [
+              HomeScreen(),
+              Container(
+                child: Center(
+                  child: Text('Search'),
                 ),
-                Container(
-                  child: Center(
-                    child: Text('Search'),
-                  ),
+              ),
+              Container(
+                child: Center(
+                  child: Text('More'),
                 ),
-                Container(
-                  child: Center(
-                    child: Text('More'),
-                  ),
-                ),
-              ],
-            ),
-            bottomNavigationBar: Bottom(),
+              ),
+            ],
           ),
-        ));
+          bottomNavigationBar: Bottom(),
+        ),
+      ),
+    );
   }
 }
