@@ -40,6 +40,9 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         brightness: Brightness.light,
         primaryColor: Colors.white,
+        // 버튼 클릭시 색상
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
       ),
       home: DefaultTabController(
         length: 3,
