@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "233310450098",
+    "project_id": "flutter-triple",
+    "storage_bucket": "flutter-triple.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:233310450098:android:4368c30e918146e1b5f4ab",
+        "android_client_info": {
+          "package_name": "com.sonsazang.triple.triple"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "233310450098-l0olgkhgqo3g2427q1cf54mq6g5vfk28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuaVLJF7hQbVMW2JKgj6OeB1IFvmOcW4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "233310450098-l0olgkhgqo3g2427q1cf54mq6g5vfk28.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "233310450098-4esavaoo2891of42motps60ajic22gr5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sonsazang.triple.triple"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
