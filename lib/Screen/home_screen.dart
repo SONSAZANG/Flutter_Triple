@@ -8,10 +8,11 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         title: Text(
           'TRIPLE',
-          textAlign: TextAlign.center,
         ),
+        centerTitle: true,
         titleTextStyle: TextStyle(
           color: Colors.black,
+          fontSize: 30,
         ),
       ),
     );
